@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Lost & Found App</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <h1 class="logo">✨ Lost & Found</h1>
+    <div class="nav-buttons">
+      <button onclick="filterItems('all')">All</button>
+      <button onclick="filterItems('lost')">Lost</button>
+      <button onclick="filterItems('found')">Found</button>
+    </div>
+  </nav>
+
+  <!-- Main Layout -->
+  <div class="container">
+
+    <!-- Left: Form -->
+    <div class="form-section">
+      <h2>Add Item</h2>
+      <form id="itemForm">
+        <input type="text" id="name" placeholder="Item Name" required>
+        <input type="text" id="location" placeholder="Location" required>
+        <textarea id="description" placeholder="Description"></textarea>
+        <input type="file" id="image">
+        
+        <select id="type">
+          <option value="lost">Lost</option>
+          <option value="found">Found</option>
+        </select>
+
+        <input type="text" id="contact" placeholder="Contact Info" required>
+
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+
+    <!-- Right: Items -->
+    <div class="items-section">
+      <h2>Items</h2>
+      <div id="itemsContainer"></div>
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
