@@ -93,11 +93,7 @@ Feel free to fork this project and improve it with new features or UI enhancemen
 
 ---
 
-## 📄 License
 
-This project is open-source and available for educational purposes.
-
----
 
 ## 💡 Author
 
